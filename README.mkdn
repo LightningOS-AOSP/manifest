@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://github.com/LightningOS-Devices/official_devices/blob/main/realbanner.png" alt="LightningOS Banner" width="100%">
+<img src="https://raw.githubusercontent.com/LightningOS-AOSP/manifest/refs/heads/1.1/banner.png" alt="LightningOS Banner" width="100%">
 
 <h1><b>Lightning OS</b></h1>
 <h3><i>When Thunder Meets Lightning</i></h3>
 
-[![Android](https://img.shields.io/badge/Android-17-3DDC84?style=for-the-badge\&logo=android\&logoColor=white)](https://github.com/LightingOS-AOSP)
-[![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge\&logo=telegram)](https://t.me/LightningOSaosp)
+[![Android](https://img.shields.io/badge/Android-17-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://github.com/LightingOS-AOSP)
+[![Telegram](https://img.shields.io/badge/Telegram-Channel-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/LightningOSaosp)
 
 <p><b>A custom Android ROM focused on performance, customization, and user experience</b></p>
 
@@ -17,16 +17,19 @@
 ## 🚀 **Quick Start**
 
 ### **Initialize Repository**
+
 ```bash
-repo init -u https://github.com/LightningOS-AOSP/manifest -b 1.0 --git-lfs
+repo init -u https://github.com/LightningOS-AOSP/manifest -b 1.1 --git-lfs
 ```
 
 ### **Sync Sources**
+
 ```bash
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
 ### **Build LightningOS**
+
 ```bash
 # Setup environment
 . build/envsetup.sh
@@ -44,17 +47,17 @@ lightning b
 
 ### **Essential Flags**
 
-| Flag | Description | Values |
-|------|-------------|--------|
-| `LIGHTNINGOS_MAINTAINER :=` | Set maintainer name | `"Your Name"` |
-| `WITH_GMS :=` | Include Google Mobile Services | `true` / `false` |
+| Flag                        | Description                    | Values           |
+| --------------------------- | ------------------------------ | ---------------- |
+| `LIGHTNINGOS_MAINTAINER :=` | Set maintainer name            | `"Your Name"`    |
+| `WITH_GMS :=`               | Include Google Mobile Services | `true` / `false` |
 
-### **GMS Variants** *(Optional)*
+### **GMS Variants** _(Optional)_
 
-| Flag | Description | Default |
-|------|-------------|---------|
+| Flag                        | Description               | Default |
+| --------------------------- | ------------------------- | ------- |
 | `TARGET_USES_MINI_GAPPS :=` | Use minimal GApps package | `false` |
-| `TARGET_USES_PICO_GAPPS :=` | Use pico GApps package | `false` |
+| `TARGET_USES_PICO_GAPPS :=` | Use pico GApps package    | `false` |
 
 > 💡 **Note**: Default configuration includes Full GMS package
 
@@ -87,10 +90,10 @@ Interested in maintaining LightningOS for your device? Check our [Maintainer Req
 
 We extend our gratitude to these amazing projects that make LightningOS possible:
 
-| [![LineageOS](https://avatars.githubusercontent.com/u/24304779?s=200\&v=4)](https://github.com/LineageOS)             | [![Rising Revived OSS](https://avatars.githubusercontent.com/u/197353021?s=200&v=4)](https://github.com/RisingOS-Revived) | [![YAAP](https://avatars.githubusercontent.com/u/70501337?s=200\&v=4)](https://github.com/Yaap)                  | [![crDroid](https://avatars.githubusercontent.com/u/9610671?s=200\&v=4)](https://github.com/crdroidandroid) | [![Evolution X](https://avatars.githubusercontent.com/u/165590896?s=200\&v=4)](https://github.com/Evolution-X)      | [![The Parasite Project](https://avatars.githubusercontent.com/u/106430773?s=200\&v=4)](https://github.com/TheParasiteProject) |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [![PixelExperience](https://avatars.githubusercontent.com/u/38539471?s=200\&v=4)](https://github.com/PixelExperience) | [![Pixel OS](https://avatars.githubusercontent.com/u/82160282?s=200\&v=4)](https://github.com/pixelos-aosp)               | [![Derpfest AOSP](https://avatars.githubusercontent.com/u/71037289?s=200&v=4)](https://github.com/DerpFest-AOSP) | [![SuperiorOS](https://avatars.githubusercontent.com/u/43355064?s=200\&v=4)](https://github.com/superioros) | [![Project Awaken](https://avatars.githubusercontent.com/u/68725628?s=200\&v=4)](https://github.com/Project-Awaken) | [![AxionOS](https://avatars.githubusercontent.com/u/197447202?s=200&v=4)](https://github.com/AxionAOSP)                        |
-| [![MistOS](https://avatars.githubusercontent.com/u/140271839?s=200&v=4)](https://github.com/Project-Mist-OS) |
+| [![LineageOS](https://avatars.githubusercontent.com/u/24304779?s=200&v=4)](https://github.com/LineageOS)             | [![Rising Revived OSS](https://avatars.githubusercontent.com/u/197353021?s=200&v=4)](https://github.com/RisingOS-Revived) | [![YAAP](https://avatars.githubusercontent.com/u/70501337?s=200&v=4)](https://github.com/Yaap)                   | [![crDroid](https://avatars.githubusercontent.com/u/9610671?s=200&v=4)](https://github.com/crdroidandroid) | [![Evolution X](https://avatars.githubusercontent.com/u/165590896?s=200&v=4)](https://github.com/Evolution-X)      | [![The Parasite Project](https://avatars.githubusercontent.com/u/106430773?s=200&v=4)](https://github.com/TheParasiteProject) |
+| -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| [![PixelExperience](https://avatars.githubusercontent.com/u/38539471?s=200&v=4)](https://github.com/PixelExperience) | [![Pixel OS](https://avatars.githubusercontent.com/u/82160282?s=200&v=4)](https://github.com/pixelos-aosp)                | [![Derpfest AOSP](https://avatars.githubusercontent.com/u/71037289?s=200&v=4)](https://github.com/DerpFest-AOSP) | [![SuperiorOS](https://avatars.githubusercontent.com/u/43355064?s=200&v=4)](https://github.com/superioros) | [![Project Awaken](https://avatars.githubusercontent.com/u/68725628?s=200&v=4)](https://github.com/Project-Awaken) | [![AxionOS](https://avatars.githubusercontent.com/u/197447202?s=200&v=4)](https://github.com/AxionAOSP)                       |
+| [![MistOS](https://avatars.githubusercontent.com/u/140271839?s=200&v=4)](https://github.com/Project-Mist-OS)         |
 
 <p align="center">
 <br>
@@ -108,11 +111,13 @@ We extend our gratitude to these amazing projects that make LightningOS possible
   
   Copyright (C) 2026 LightingOS-AOSP
 
-  Licensed under the Apache License, Version 2.0
-  ```
-  
-  ---
-  
-  **Made with** ⚡️ **by the LightningOS Team**
-  
+Licensed under the Apache License, Version 2.0
+
+```
+
+---
+
+**Made with** ⚡️ **by the LightningOS Team**
+
 </div>
+```
