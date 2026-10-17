@@ -5,13 +5,13 @@
            fetch="https://github.com/LightningOS-AOSP"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/1.0" />
+           revision="refs/heads/1.1" />
 
   <remote  name="lightning-device"
            fetch="https://github.com/LightningOS-Devices"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/1.0" />
+           revision="refs/heads/1.1" />
   
   <remote  name="gitlab"
            sync-c="true"
@@ -22,19 +22,13 @@
            sync-c="true"
            sync-j="4"
            fetch="https://github.com" />
-           
-  <remote  name="evo"
-           fetch="https://github.com/Evolution-X"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/cnb" />
 
   <remote  name="lightning-codeberg"
            fetch="https://codeberg.org/MODEDGES"
            sync-c="true"
            sync-j="4"
            depth="1"
-           revision="refs/heads/1.0" />
+           revision="refs/heads/1.1" />
 
 
    <!-- Art -->
@@ -44,7 +38,6 @@
   <project path="bionic" name="bionic" groups="pdk" remote="lightning" />
 
   <!-- Bootable -->
-  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" remote="lightning" />
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="lightning" />
 
   <!-- Build -->
@@ -58,6 +51,11 @@
   </project>
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="lightning" />
 
+  <!-- External -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="lightning" />
+  <project path="external/bouncycastle" name="external_bouncycastle" remote="lightning" />
+  <project path="external/piex" name="external_piex" groups="pdk" remote="lightning" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk,sysui-studio" remote="lightning" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lightning" />
@@ -65,14 +63,25 @@
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="lightning" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk,sysui-studio" remote="lightning" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="lightning" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="lightning" />  
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
+  <project path="packages/resources/apps" name="packages_resources_apps" remote="lightning" />
+  <project path="packages/services/AxQuickLook" name="packages_services_AxQuickLook" remote="lightning" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="lightning" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
 
   <!-- Hardware -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="lightning" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="lightning" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="lightning" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="lightning" />
 
   <!-- Kernel -->
   <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="lightning" />
+  
+  <!-- Libcore -->
+  <project path="libcore" name="libcore" groups="pdk,sysui-studio" remote="lightning" />
 
   <!-- LineageOS additions -->
   <project path="lineage-sdk" name="lineage-sdk" remote="lightning" />
@@ -80,15 +89,24 @@
   <project path="lightning-maintainers" name="lightning-maintainers" remote="lightning-device" />
   
   <!-- Packages -->
+  <project path="packages/apps/AppLocker" name="packages_apps_AppLocker" remote="lightning" />
   <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github-non-los" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="lightning" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="lightning" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="lightning" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="lightning" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="lightning" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="lightning" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="lightning" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="lightning" />
   <project path="packages/apps/Thunderbolt" name="packages_apps_Thunderbolt" remote="lightning" />
+  <project path="packages/apps/Sandbox" name="packages_apps_Sandbox" remote="lightning" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="lightning" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="lightning" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="lightning" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" groups="apps_stk,pdk-fs" remote="lightning" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="lightning" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lightning" />
   
@@ -97,16 +115,21 @@
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" groups="pdk" remote="lightning" />
+  <project path="system/fs/fs_mgr" name="system_fs_fs_mgr" groups="pdk" remote="lightning" />
   <project path="system/core" name="system_core" groups="pdk" remote="lightning" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="lightning" />
   <project path="system/media" name="system_media" groups="pdk" remote="lightning" />
+  <project path="system/memory/libdmabufheap" name="system_memory_libdmabufheap" groups="pdk" remote="lightning" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="lightning" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="lightning" />
-    <project path="system/memory/libion" name="system_memory_libion" groups="pdk" remote="lightning" />  
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="lightning" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="lightning" />
+  <project path="system/memory/libion" name="system_memory_libion" groups="pdk" remote="lightning" />  
 
   <!-- Vendor -->
   <project path="vendor/extras" name="vendor_extras" remote="lightning" />
   <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="lightning" />
   <project path="vendor/lineage" name="vendor_lightning" remote="lightning" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="lightning" />
   <project path="vendor/gms" name="vendor_gms" remote="lightning-codeberg" />
 </manifest>
