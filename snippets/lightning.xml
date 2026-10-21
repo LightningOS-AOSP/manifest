@@ -91,6 +91,7 @@
   <project path="packages/apps/Stk" name="packages_apps_Stk" groups="apps_stk,pdk-fs" remote="lightning" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="lightning" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" groups="pdk-cw-fs,pdk-fs" remote="lightning" />
   
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="lightning" />
@@ -102,7 +103,7 @@
   <project path="system/media" name="system_media" groups="pdk" remote="lightning" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="lightning" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="lightning" />
-    <project path="system/memory/libion" name="system_memory_libion" groups="pdk" remote="lightning" />  
+  <project path="system/memory/libion" name="system_memory_libion" groups="pdk" remote="lightning" />  
 
   <!-- Vendor -->
   <project path="vendor/extras" name="vendor_extras" remote="lightning" />
