@@ -98,7 +98,7 @@
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" groups="pdk" remote="lightning" />
-  <project path="system/core" name="system_core" groups="pdk" remote="lightning" />
+  <project path="system/core" name="system_core_old" groups="pdk" remote="lightning" />
   <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="lightning" />
   <project path="system/media" name="system_media" groups="pdk" remote="lightning" />
   <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="lightning" />
