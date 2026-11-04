@@ -82,6 +82,7 @@
   
   <!-- Packages -->
   <project path="packages/apps/AppLocker" name="packages_apps_AppLocker" remote="lightning" />
+  <project path="packages/apps/LightningBrowser" name="packages_apps_LightningBrowser" remote="lightning" />
   <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github-non-los" />
   <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="lightning" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="lightning" />
